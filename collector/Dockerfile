@@ -4,7 +4,7 @@ RUN apt-get update -y
 RUN apt-get install wget unzip openjdk-8-jre -y
 RUN update-alternatives --config java
 # Download Scala Stream Collector Jar
-RUN wget https://bintray.com/snowplow/snowplow-generic/download_file?file_path=snowplow_scala_stream_collector_kinesis_0.16.0.zip
+RUN wget -O snowplow_scala_stream_collector_kinesis_0.16.0.zip 'https://bintray.com/snowplow/snowplow-generic/download_file?file_path=snowplow_scala_stream_collector_kinesis_0.16.0.zip'
 # Unzip the Jar
 RUN unzip snowplow_scala_stream_collector_kinesis_0.16.0.zip
 # Execute Scala Steam Collector Jar as a process
