@@ -234,8 +234,8 @@ collector {
       # If both are set to 'iam', use AWS IAM Roles to provision credentials.
       # If both are set to 'env', use environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
       aws {
-        accessKey = iam
-        secretKey = iam
+        accessKey = default
+        secretKey = default
       }
 
       # Minimum and maximum backoff periods, in milliseconds
