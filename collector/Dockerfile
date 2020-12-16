@@ -1,7 +1,7 @@
 FROM amd64/ubuntu:latest
 # Install Java 8
-RUN yum update
-RUN yum install java-1.8.0-openjdk -y
+RUN apt-get update -y
+RUN apt-get install java-1.8.0-openjdk -y
 RUN update-alternatives --config java
 # Download Scala Stream Collector Jar
 RUN wget https://bintray.com/snowplow/snowplow-generic/download_file?file_path=snowplow_scala_stream_collector_kinesis_0.16.0.zip .
