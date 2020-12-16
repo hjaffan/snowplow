@@ -9,4 +9,4 @@ RUN wget -O snowplow_scala_stream_collector_kinesis_0.16.0.zip 'https://bintray.
 RUN unzip snowplow_scala_stream_collector_kinesis_0.16.0.zip
 # Execute Scala Steam Collector Jar as a process
 COPY ./collector.config.hocon .
-ENTRYPOINT java -jar snowplow-stream-collector-kinesis-0.16.0.jar --config collector.config.hocon & disown
+ENTRYPOINT java -jar snowplow-stream-collector-kinesis-0.16.0.jar --config collector.config.hocon

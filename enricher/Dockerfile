@@ -10,4 +10,4 @@ RUN unzip snowplow_stream_enrich_kinesis_0.21.0.zip
 # Execute Scala Steam Collector Jar as a process
 COPY ./enricher.config.hocon .
 
-ENTRYPOINT java -Dorg.slf4j.simpleLogger.defaultLogLevel=info -jar snowplow-stream-enrich-kinesis-0.21.0.jar --config enricher.config.hocon --resolver file:resolver.json --enrichments file:enrichments & disown
+ENTRYPOINT java -Dorg.slf4j.simpleLogger.defaultLogLevel=info -jar snowplow-stream-enrich-kinesis-0.21.0.jar --config enricher.config.hocon --resolver file:resolver.json --enrichments file:enrichments
