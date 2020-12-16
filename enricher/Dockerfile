@@ -1,7 +1,7 @@
 FROM amd64/ubuntu:latest
 # Install Java 8
 RUN apt-get update -y
-RUN apt-get install openjdk-8-jre -y
+RUN apt-get install wget unzip openjdk-8-jre -y
 RUN update-alternatives --config java
 # Download Kinesis Enricher Jar
 RUN wget https://bintray.com/snowplow/snowplow-generic/download_file?file_path=snowplow_stream_enrich_kinesis_0.21.0.zip .
