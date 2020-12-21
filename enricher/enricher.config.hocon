@@ -3,12 +3,12 @@ enrich {
   streams {
 
     in {
-      raw = "collector-g"
+      raw = "snowplow_collected_good_events_stream_494503561239"
     }
 
     out {
-      enriched = "enricher-g"
-      bad = "enricher-b"
+      enriched = "snowplow_enriched_good_events_stream_494503561239"
+      bad = "snowplow_enriched_bad_events_stream_494503561239"
       partitionKey = "event_id"
     }
 
