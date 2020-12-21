@@ -199,10 +199,10 @@ collector {
 
   streams {
     # Events which have successfully been collected will be stored in the good stream/topic
-    good = collector-g
+    good = snowplow_collected_good_events_stream_494503561239
 
     # Events that are too big (w.r.t Kinesis 1MB limit) will be stored in the bad stream/topic
-    bad = collector-b
+    bad = snowplow_collected_bad_events_stream_494503561239
 
     # Whether to use the incoming event's ip as the partition key for the good stream/topic
     # Note: Nsq does not make use of partition key.
