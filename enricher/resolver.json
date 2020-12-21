@@ -12,6 +12,16 @@
             "uri": "http://iglucentral.com"
           }
         }
+      },
+      {
+        "name": "POC Iglu on AWS S3",
+        "priority": 1,
+        "vendorPrefixes": [ "com.company" ],
+        "connection": {
+          "http": {
+            "uri": "https://snowplow-schema-repository-494503561239.s3-us-west-1.amazonaws.com"
+          }
+        }
       }
     ]
   }
